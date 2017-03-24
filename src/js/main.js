@@ -231,6 +231,10 @@ $(document).ready(function() {
     polyfill: false
   });
 
+$('.carusel-sl').slick({
+   slidesToShow: 5
+})
+
 
 });
 
