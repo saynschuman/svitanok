@@ -1061,7 +1061,9 @@ ul li {
 .form-section {
   padding: 40px 0px 20px;
   background-image: url(../img/back-girl.jpg);
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  z-index: 9999; }
 
 .action-block__text {
   color: #fff;
@@ -3102,3 +3104,64 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
 
 .windows-type-list__item--is-active .windows-subtype-list {
   display: block; }
+
+main.roller-blinds {
+  margin-top: 155px; }
+  main.roller-blinds .white-heading {
+    letter-spacing: 0px; }
+  main.roller-blinds .white-btn, main.roller-blinds .red-btn {
+    padding: 5px 53px; }
+  main.roller-blinds .form-section {
+    background-image: url(../img/back-girl.jpg); }
+
+.inner-window-desk-rollers.green-greadient-block:before {
+  background-image: url(../img/green-grad-1.png);
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  left: 2px;
+  top: 0;
+  pointer-events: none;
+  background-position: 0 0;
+  background-size: cover; }
+
+.inner-window-desk-rollers.green-greadient-block .white-text-block:after {
+  position: absolute;
+  content: '';
+  left: 100%;
+  top: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 80px;
+  background-image: url(../img/green-corner.png); }
+
+.outside-window-desk.orange-greadient-block:before {
+  background-image: url(../img/orange-grad.png);
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  right: 2px;
+  top: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: -80px 0px; }
+
+.outside-window-desk.orange-greadient-block .white-text-block:after {
+  position: absolute;
+  content: '';
+  right: 100%;
+  top: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 80px;
+  background-image: url(../img/orange-corner.png); }
+
+.inner-window-desk-rollers {
+  background-image: url(../img/rollers-1.jpg);
+  background-size: cover;
+  position: relative;
+  height: 470px;
+  background-position: 550px center;
+  background-repeat: no-repeat; }
