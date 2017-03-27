@@ -231,10 +231,32 @@ $(document).ready(function() {
     polyfill: false
   });
 
-$('.carusel-sl').slick({
-   slidesToShow: 5,
-   arrows: true
-})
+  $('.carusel-sl').slick({
+     slidesToShow: 5,
+     arrows: true
+  })
+
+  // ui 
+
+  $('.blocks-ui li').click(function(){
+    var id = $(this).attr('id');
+    $('.ui-wrap').removeClass('ui-current');
+    $('ul[data-id="' + id + '"]').addClass('ui-current');
+    $('.blocks-ui li').removeClass('active');
+    $(this).addClass('active');
+  })
+
+    $( "#slider-vertical" ).slider({
+      orientation: "vertical",
+      range: "min",
+      min: 0,
+      max: 100,
+      value: 60,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+      }
+    });
+    $( "#amount" ).val( $( "#slider-vertical" ).slider( "value" ) );
 
 
 });
