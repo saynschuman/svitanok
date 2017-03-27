@@ -3133,13 +3133,15 @@ main.roller-blinds {
       font-size: 40px;
       font-weight: 600;
       color: #444443;
-      padding-bottom: 20px;
-      text-transform: uppercase; }
+      padding-bottom: 16px;
+      text-transform: uppercase;
+      font-family: 'ProximaNovaBold', Arial, sans-serif;
+      padding-top: 40px; }
     main.roller-blinds .calculator .sub-title {
       font-size: 30px;
       font-weight: 100;
       color: #6f6f6f;
-      padding-bottom: 17px;
+      padding-bottom: 37px;
       text-transform: uppercase; }
     main.roller-blinds .calculator .step {
       font-size: 18px;
@@ -3152,7 +3154,27 @@ main.roller-blinds {
       color: #6f6f6f;
       font-weight: 600;
       text-transform: uppercase;
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      font-family: 'ProximaNovaBold', Arial, sans-serif; }
+    main.roller-blinds .calculator .block .img-wr {
+      height: 193px;
+      width: 193px;
+      position: relative;
+      display: block;
+      margin: 0 auto; }
+      main.roller-blinds .calculator .block .img-wr::after {
+        content: '';
+        position: absolute;
+        border: none;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: inset 0px 0 16px 6px rgba(0, 0, 0, 0.4);
+        border-radius: 100%; }
+    main.roller-blinds .calculator .block img {
+      width: 100%;
+      height: auto; }
     main.roller-blinds .calculator .block input {
       position: absolute;
       left: 0;
@@ -3160,22 +3182,49 @@ main.roller-blinds {
       margin: auto;
       bottom: 45px;
       height: 30px;
-      width: 30px; }
+      width: 30px;
+      display: none; }
+      main.roller-blinds .calculator .block input:checked + label .lab-img {
+        background-image: url(../img/checked-l.png); }
+      main.roller-blinds .calculator .block input:checked + label .tit {
+        color: #e50d37; }
     main.roller-blinds .calculator .block .tit {
       font-size: 18px;
       color: #444443;
       text-transform: uppercase;
       font-weight: 600;
-      padding-top: 15px; }
-    main.roller-blinds .calculator .carusel-sl .item {
-      text-align: center; }
-      main.roller-blinds .calculator .carusel-sl .item img {
-        display: block;
-        margin: 0 auto; }
-      main.roller-blinds .calculator .carusel-sl .item p {
-        font-size: 15px;
-        color: #444443;
-        font-weight: 600; }
+      padding-top: 15px;
+      font-family: 'ProximaNovaBold', Arial, sans-serif; }
+    main.roller-blinds .calculator .block .lab-img {
+      height: 33px;
+      width: 33px;
+      background-image: url(../img/no-checked.png);
+      background-repeat: no-repeat;
+      display: block;
+      margin: auto;
+      border: 10px solid #FFF;
+      border-radius: 10px;
+      box-sizing: content-box;
+      margin-top: -30px;
+      z-index: 999;
+      position: relative;
+      box-shadow: 0 6px 37px -3px rgba(0, 0, 0, 0.3);
+      background-color: #fff; }
+    main.roller-blinds .calculator .carusel-sl {
+      margin-top: 30px; }
+      main.roller-blinds .calculator .carusel-sl .item {
+        text-align: center;
+        margin: 0 15px; }
+        main.roller-blinds .calculator .carusel-sl .item:focus {
+          outline: none; }
+        main.roller-blinds .calculator .carusel-sl .item img {
+          display: block;
+          margin: 0 auto;
+          width: 100%; }
+        main.roller-blinds .calculator .carusel-sl .item p {
+          font-size: 15px;
+          color: #444443;
+          font-weight: 600; }
   main.roller-blinds .variantes {
     padding-top: 20px; }
     main.roller-blinds .variantes .choose {
@@ -3252,6 +3301,36 @@ main.roller-blinds {
         background-color: #ffcc00;
         color: #fff;
         font-weight: 300; }
+  main.roller-blinds .to-order-block-btn {
+    padding: 16px 42px; }
+  main.roller-blinds sup {
+    left: -3px;
+    font-size: 60%; }
+  main.roller-blinds .divider-l {
+    height: 1px;
+    width: 100%;
+    background-color: #e9e9e9;
+    margin: 50px 0; }
+  main.roller-blinds .slick-prev, main.roller-blinds .slick-next {
+    background-color: transparent;
+    top: 40%;
+    -webkit-transform: translate(0, -40%);
+        -ms-transform: translate(0, -40%);
+            transform: translate(0, -40%);
+    height: 50px;
+    width: 50px; }
+  main.roller-blinds .slick-prev:before, main.roller-blinds .slick-next:before {
+    display: none; }
+  main.roller-blinds .slick-prev {
+    background-image: url(../img/left.png);
+    left: -60px; }
+    main.roller-blinds .slick-prev:hover {
+      background-image: url(../img/left-active.png); }
+  main.roller-blinds .slick-next {
+    background-image: url(../img/right.png);
+    right: -60px; }
+    main.roller-blinds .slick-next:hover {
+      background-image: url(../img/right-active.png); }
 
 .inner-window-desk-rollers.green-greadient-block:before {
   background: -webkit-linear-gradient(left, rgba(48, 139, 56, 0.9), rgba(80, 207, 101, 0.9));
@@ -3306,3 +3385,41 @@ main.roller-blinds {
   height: 100%;
   background-position: 550px center;
   background-repeat: no-repeat; }
+
+.black-simple {
+  color: #444443;
+  line-height: 1.3;
+  border-bottom: none; }
+  .black-simple::before {
+    background: url(../img/win-1.png) no-repeat center center;
+    width: 30px;
+    height: 32px;
+    top: 18px; }
+
+.black-simple-plus {
+  line-height: 1.3;
+  border-bottom: none; }
+  .black-simple-plus::before {
+    background: url(../img/win-plus.png) no-repeat center center;
+    content: '';
+    width: 35px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: -50px; }
+
+.no-mar {
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 0; }
+
+.no-mar-l {
+  margin-top: 0;
+  padding-top: 7px;
+  padding-bottom: 7px; }
+
+.without-u {
+  color: #626262;
+  position: relative;
+  text-decoration: line-through; }

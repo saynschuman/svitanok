@@ -232,7 +232,8 @@ $(document).ready(function() {
   });
 
 $('.carusel-sl').slick({
-   slidesToShow: 5
+   slidesToShow: 5,
+   arrows: true
 })
 
 

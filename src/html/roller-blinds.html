@@ -62,28 +62,27 @@
 
 <section class="calculator-header">
 	<div class="container">
-		<a href="#" class="add-window">
-			Добавить новое окно 
+		<a href="#" class="add-window black-simple-plus no-mar">
+			Добавить <br> новое изделие 
 			<span>(1)</span>
 		</a>
-		<div class="choose-window">
-			<a href="#" class="choose-window__link clearfix">
-				<img src="img/window-mini.jpg" alt="Window preview" class="choose-window__pic">
-				<span class="choose-window__description">
-					Выбрано:
-					<span class="choose-window__text">Окно №6</span>
-				</span>
-			</a>
-		</div>
-		<div class="to-order-block">
-			<div class="window-price">
-				<span class="window-price__text">Стоимость окна:</span>
-				<span class="window-price__summ">30 050 руб.</span>
+		<a href="#" class="add-window black-simple no-mar">
+			Рулонная штора <br> №1 
+		</a>
+		<div class="to-order-block ">
+			<div class="window-price no-mar">
+				<span class="window-price__text">Стоимость без скидки:</span>
+				<span class="window-price__summ without-u">550 <sup>00</sup> руб.</span>
 			</div>
-			<div class="services-price">
+			<div class="window-price no-mar">
+				<span class="window-price__text">Стоимость со скидкой:</span>
+				<span class="window-price__summ">499 <sup>00</sup> руб.</span>
+			</div>
+			<div class="services-price no-mar-l">
 				<ul class="services-price-list">
-					<li class="services-price-list__item clearfix">Монтаж: <span class="services-price-list__text">300 руб.</span></li>
-					<li class="services-price-list__item clearfix">Отделка: <span class="services-price-list__text">4500 руб.</span></li>
+					<li class="services-price-list__item clearfix">Замер: <span class="services-price-list__text">300 руб.</span></li>
+					<li class="services-price-list__item clearfix">Доставка: <span class="services-price-list__text">4500 руб.</span></li>
+					<li class="services-price-list__item clearfix">Монтаж: <span class="services-price-list__text">4500 руб.</span></li>
 				</ul>
 			</div>
 			<a href="#" class="to-order-block-btn">
@@ -108,29 +107,42 @@
 	<div class="sub-title">Рулонная штора №1</div>
 	<div class="step">Шаг 1</div>
 	<div class="choose">выберите тип рулонных штор</div>
-	<div class="blocks clearfix">
-		<div class="col-md-4">
-			<div class="block">
-				<img src="img/thumb-1.png">
-				<input type="checkbox" name="" checked>
-				<div class="tit">Открытые рулонные шторы</div>
+	<div class="container">
+		<div class="blocks clearfix">
+			<div class="col-md-4">
+				<div class="block">
+					<div class="img-wr"><img src="img/th-1.jpg"></div>
+					<input id="check" type="checkbox" name="" checked>
+					<label for="check">
+						<span class="lab-img"></span>
+						<div class="tit">Открытые рулонные шторы</div>
+					</label>
+					
+				</div>
 			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="block">
-				<img src="img/thumb-1.png">
-				<input type="checkbox" name="">
-				<div class="tit">Закрытые рулонные шторы</div>
+			<div class="col-md-4">
+				<div class="block">
+					<div class="img-wr"><img src="img/th-2.jpg"></div>
+					<input id="check-2" type="checkbox" name="">
+					<label for="check-2">
+						<span class="lab-img"></span>
+						<div class="tit">Закрытые рулонные шторы</div>
+					</label>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="block">
-				<img src="img/thumb-1.png">
-				<input type="checkbox" name="">
-				<div class="tit">рулонные шторы на проем</div>
+			<div class="col-md-4">
+				<div class="block">
+					<div class="img-wr"><img src="img/th-3.png"></div>
+					<input id="check-3" type="checkbox" name="">
+					<label for="check-3">
+						<span class="lab-img"></span>
+						<div class="tit">рулонные шторы на проем</div>
+					</label>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="divider-l"></div>
 	<div class="step">Шаг 2</div>
 	<div class="choose">выберите ткань и размер рулонной шторы</div>	
 	<div class="container">
@@ -140,19 +152,19 @@
 				<p>АКЦИЯ</p>
 			</div>
 			<div class="item">
-				<img src="img/img-thumb-1.png">
+				<img src="img/b-2.jpg">
 				<p>Группа 1</p>
 			</div>
 			<div class="item">
-				<img src="img/img-thumb-1.png">
+				<img src="img/b-3.jpg">
 				<p>Группа 2</p>
 			</div>
 			<div class="item">
-				<img src="img/img-thumb-1.png">
+				<img src="img/b-4.jpg">
 				<p>Группа 3</p>
 			</div>
 			<div class="item">
-				<img src="img/img-thumb-1.png">
+				<img src="img/b-5.jpg">
 				<p>Группа 4</p>
 			</div>
 			<div class="item">
@@ -160,9 +172,21 @@
 				<p>Группа 5</p>
 			</div>
 			<div class="item">
-				<img src="img/img-thumb-1.png">
+				<img src="img/b-2.jpg">
 				<p>Группа 6</p>
-			</div>			
+			</div>	
+			<div class="item">
+				<img src="img/b-3.jpg">
+				<p>Группа 2</p>
+			</div>
+			<div class="item">
+				<img src="img/b-4.jpg">
+				<p>Группа 3</p>
+			</div>
+			<div class="item">
+				<img src="img/b-5.jpg">
+				<p>Группа 4</p>
+			</div>		
 		</div>
 	</div>
 
