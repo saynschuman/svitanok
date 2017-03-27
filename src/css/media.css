@@ -7,6 +7,20 @@
     padding-right: 10px; } }
 
 @media screen and (max-width: 1230px) {
+  main.roller-blinds .to-order-block-btn {
+    width: 100%; }
+  .window-price.no-mar {
+    padding-bottom: none;
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none; }
+  .to-order-block {
+    float: none; }
+  .services-price {
+    float: right;
+    border-left: none;
+    padding-left: 10px;
+    margin-right: 0; }
   .phone-header {
     font-size: 18px; }
   .top-line {
@@ -120,6 +134,67 @@
     font-size: 36px; } }
 
 @media screen and (max-width: 992px) {
+  main.roller-blinds .slick-prev {
+    z-index: 999; }
+  main.roller-blinds .add-new {
+    width: 100%; }
+  main.roller-blinds .calculator .choose {
+    line-height: 1.2; }
+  main.roller-blinds .ui-choose .right .your-ch {
+    padding-left: 15px; }
+  main.roller-blinds .add-new::after {
+    display: none; }
+  main.roller-blinds .add-new {
+    padding-left: 0; }
+  .services-price {
+    float: none;
+    border-left: none;
+    padding-left: 10px;
+    margin-right: 0;
+    width: 200px;
+    display: block;
+    margin: auto; }
+  main.roller-blinds .sl-horizontal {
+    display: none; }
+  main.roller-blinds .sl-vertical {
+    display: none; }
+  main.roller-blinds .ui-choose .right {
+    margin-top: 50px; }
+  main.roller-blinds .ui-choose .right .your-ch {
+    max-width: 100%; }
+  main.roller-blinds .blocks-ui {
+    text-align: left;
+    float: none;
+    width: 100%;
+    max-width: 100%; }
+  main.roller-blinds .variantes .block img {
+    display: block;
+    padding-top: 10px;
+    margin: 0 auto; }
+  .no-mar {
+    margin-top: 0;
+    padding-top: 15px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    float: none;
+    text-align: center; }
+  .black-simple-plus::before {
+    display: none; }
+  .black-simple::before {
+    display: none; }
+  .outside-window-desk.orange-greadient-block .white-text-block:after {
+    display: none; }
+  main.roller-blinds .inner-window-desk.orange-block:before {
+    width: 100%; }
+  main.roller-blinds .slick-next {
+    right: 5px; }
+  main.roller-blinds .slick-prev {
+    left: 5px; }
+  main.roller-blinds .main-img img {
+    float: none; }
+  .outside-window-desk.orange-greadient-block:before {
+    width: 100%; }
   .top-panel .phone-header {
     font-size: 20px; }
   .stationar-phone {
@@ -279,6 +354,29 @@
     font-size: 16px; } }
 
 @media screen and (max-width: 767px) {
+  main.roller-blinds .addition .block {
+    height: auto; }
+  main.roller-blinds .addition .block img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+  main.roller-blinds .variantes .choose {
+    line-height: 1.1; }
+  main.roller-blinds .addition .receive li {
+    display: block;
+    float: none;
+    margin-bottom: 20px;
+    width: 100%; }
+  main.roller-blinds .variantes .block img,
+  main.roller-blinds .main-img img {
+    width: 100%; }
+  main.roller-blinds .inputs li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 9px; }
+  main.roller-blinds .inputs li button {
+    width: 100%;
+    max-width: 215px; }
   .top-line {
     display: none; }
   .top-line.cart-block {
@@ -430,6 +528,15 @@
       margin-right: 0; } }
 
 @media screen and (max-width: 685px) {
+  main.roller-blinds .blocks-ui li {
+    display: block;
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    width: 32%;
+    margin: 0 auto; }
+  main.roller-blinds .ui-wrap {
+    top: 163px; }
   .quest-form .input-group .right {
     width: 100%;
     padding: 0;
@@ -464,6 +571,8 @@
     bottom: 0; } }
 
 @media screen and (max-width: 580px) {
+  main.roller-blinds .add-new::before {
+    display: none; }
   .main-slider .slider-item-wrap {
     height: initial; }
   .main-slider .slider-item-wrap .slider-caption .slider-heading {
@@ -523,6 +632,13 @@
     margin-right: -50px; } }
 
 @media screen and (max-width: 450px) {
+  main.roller-blinds .addition .choose {
+    line-height: 1; }
+  main.roller-blinds .addition .receive li {
+    margin-bottom: 30px; }
+  main.roller-blinds .super-price .title,
+  main.roller-blinds .super-price .sub-sub-title {
+    line-height: 1.1; }
   body {
     font-size: 14px;
     line-height: 20px; }

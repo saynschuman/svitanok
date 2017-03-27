@@ -250,13 +250,24 @@ $(document).ready(function() {
       orientation: "vertical",
       range: "min",
       min: 0,
-      max: 100,
-      value: 60,
+      max: 2000,
+      value: 1400,
       slide: function( event, ui ) {
         $( "#amount" ).val( ui.value );
       }
     });
     $( "#amount" ).val( $( "#slider-vertical" ).slider( "value" ) );
+
+$( "#slider-horizontal" ).slider({
+      range: "min",
+      min: 0,
+      max: 2000,
+      value: 1400,
+      slide: function( event, ui ) {
+        $( "#amount-2" ).val( ui.value );
+      }
+    });
+    $( "#amount-2" ).val( $( "#slider-horizontal" ).slider( "value" ) );    
 
 
 });
