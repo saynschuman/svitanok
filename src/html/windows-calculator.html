@@ -166,82 +166,131 @@
 					</ul>
 				</div>
 			</div>
-	<div class="ui-choose">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 left main-img">
-					<img src="img/window-big.jpg" alt="">
-					<div class="sl-vertical">
-						<div data-sm="мм" class="inp-wr"><input type="text" id="amount" readonly></div>
-						<div id="slider-vertical" style="height:311px;"></div>
-					</div>
-					<div class="sl-horizontal">
-						<div data-sm="мм" class="inp-wr"><input type="text" id="amount-2" readonly></div>
-						<div id="slider-horizontal"></div>
-					</div>					
-				</div>
-				<div class="col-md-6 right">
-					<div class="block">
-						<div class="title">Доп. комплектация</div>
-						<div class="row">
-							<div class="col-md-6 l">
-								<label for="window-sill">Подоконник</label>
-								<button class="toggle-item" type="text" id="window-sill">- Выберите подоконник -</button>
-								<ul class="toggle-list" data-id="window-sill">
-									<li>item-1</li>
-									<li>item-2</li>
-									<li>item-3</li>
-								</ul>
-							</div>
-							<div class="col-md-6 r">
-								<label for="low-tide">Отлив</label>
-								<button class="toggle-item" type="text" id="low-tide">- Выберите подоконник -</button>
-								<ul class="toggle-list" data-id="low-tide">
-									<li>item-1</li>
-									<li>item-2</li>
-									<li>item-3</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+			<div class="ui-choose">
+				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="block small-bl">
-								<div class="title">Опции</div>
-								<input id="moskit-grid" type="checkbox" name="" checked>
-								<label class="label" for="moskit-grid">
-									<span class="lab-img"></span>
-									<div class="tit">москитная сетка</div>
-								</label>
-								<input id="child-castle" type="checkbox" name="">
-								<label class="label" for="child-castle">
-									<span class="lab-img"></span>
-									<div class="tit">детский замок</div>
-								</label>
+						<div class="col-md-6 left main-img">
+							<img src="img/window-big.jpg" alt="">
+							<div class="sl-vertical">
+								<div data-sm="мм" class="inp-wr"><input type="text" id="amount" readonly></div>
+								<div id="slider-vertical" style="height:311px;"></div>
 							</div>
+							<div class="sl-horizontal">
+								<div data-sm="мм" class="inp-wr"><input type="text" id="amount-2" readonly></div>
+								<div id="slider-horizontal"></div>
+							</div>					
 						</div>
-						<div class="col-md-6">
-							<div class="block small-bl">
-								<div class="title">услуги</div>
-								<input id="mont" type="checkbox" name="">
-								<label class="label" for="mont">
-									<span class="lab-img"></span>
-									<div class="tit">можнаж</div>
-								</label>
-								<input id="deliv" type="checkbox" name="" checked>
-								<label class="label" for="deliv">
-									<span class="lab-img"></span>
-									<div class="tit">доставка</div>
-								</label>						
-							</div>						
+						<div class="col-md-6 right">
+							<div class="block">
+								<div class="title">Доп. комплектация</div>
+								<div class="row">
+									<div class="col-md-6 l">
+										<label for="window-sill">Подоконник</label>
+										<button class="toggle-item" type="text" id="window-sill">- Выберите подоконник -</button>
+										<ul class="toggle-list" data-id="window-sill">
+											<li>item-1</li>
+											<li>item-2</li>
+											<li>item-3</li>
+										</ul>
+									</div>
+									<div class="col-md-6 r">
+										<label for="low-tide">Отлив</label>
+										<button class="toggle-item" type="text" id="low-tide">- Выберите подоконник -</button>
+										<ul class="toggle-list" data-id="low-tide">
+											<li>item-1</li>
+											<li>item-2</li>
+											<li>item-3</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="block small-bl">
+										<div class="title">Опции</div>
+										<input id="moskit-grid" type="checkbox" name="" checked>
+										<label class="label" for="moskit-grid">
+											<span class="lab-img"></span>
+											<div class="tit">москитная сетка</div>
+										</label>
+										<input id="child-castle" type="checkbox" name="">
+										<label class="label" for="child-castle">
+											<span class="lab-img"></span>
+											<div class="tit">детский замок</div>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="block small-bl">
+										<div class="title">услуги</div>
+										<input id="mont" type="checkbox" name="">
+										<label class="label" for="mont">
+											<span class="lab-img"></span>
+											<div class="tit">можнаж</div>
+										</label>
+										<input id="deliv" type="checkbox" name="" checked>
+										<label class="label" for="deliv">
+											<span class="lab-img"></span>
+											<div class="tit">доставка</div>
+										</label>						
+									</div>						
+								</div>
+							</div>
+
 						</div>
 					</div>
-					
+				</div>
+			</div>	
+		</div>
+		<div class="calculator-step step-gray">
+			<div class="container">
+				<span class="calculator-step-descr">Шаг 2</span>
+				<h3 class="calculator-step-title">выберите свое окно</h3>
+				<div class="choose-your-window row">
+					<div class="col-md-3">
+						<input id="window-1" type="radio" name="choose-window">
+						<label for="window-1">
+							<img src="img/shoose-win-1.png" alt="">
+							<span class="radio-block">
+								<span class="lab-img"></span>
+								<div class="tit">basic</div>							
+							</span>
+						</label>
+					</div>
+					<div class="col-md-3">
+						<input id="window-2" type="radio" name="choose-window">
+						<label for="window-2">
+							<img src="img/shoose-win-2.png" alt="">
+							<span class="radio-block">
+								<span class="lab-img"></span>
+								<div class="tit">standart</div>							
+							</span>
+						</label>
+					</div>
+					<div class="col-md-3">
+						<input id="window-3" type="radio" name="choose-window">
+						<label for="window-3">
+							<img src="img/choose-win-3.png" alt="">
+							<span class="radio-block">
+								<span class="lab-img"></span>
+								<div class="tit">optima</div>							
+							</span>
+						</label>
+					</div>
+					<div class="col-md-3">
+						<input id="window-4" type="radio" name="choose-window">
+						<label for="window-4">
+							<img src="img/choose-win-4.png" alt="">
+							<span class="radio-block">
+								<span class="lab-img"></span>
+								<div class="tit">Premium</div>							
+							</span>
+						</label>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>			
-		</div>
+		</div>					
+		
 	</section>
 </main>
 #=include 'includes/_footer.html'
@@ -250,5 +299,4 @@
 
 
 
-			
-		
+

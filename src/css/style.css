@@ -3991,3 +3991,50 @@ main.windows-calculator-container .ui-wrap {
     display: block; }
   main.windows-calculator-container .ui-wrap li {
     margin: 0; }
+
+main.windows-calculator-container .step-gray {
+  margin-top: 70px;
+  background-color: #f2f2f2;
+  padding-top: 10px; }
+  main.windows-calculator-container .step-gray .choose-your-window img {
+    display: block;
+    margin: auto; }
+  main.windows-calculator-container .step-gray .choose-your-window input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 45px;
+    height: 30px;
+    width: 30px;
+    display: none; }
+    main.windows-calculator-container .step-gray .choose-your-window input:checked + label .lab-img {
+      background-image: url(../img/checked-l.png); }
+    main.windows-calculator-container .step-gray .choose-your-window input:checked + label .tit {
+      color: #e50d37; }
+  main.windows-calculator-container .step-gray .choose-your-window .radio-block {
+    position: absolute;
+    bottom: -12px;
+    right: 46px; }
+    main.windows-calculator-container .step-gray .choose-your-window .radio-block .tit {
+      font-size: 15px;
+      color: #444443;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: 'PT Sans', sans-serif;
+      text-align: center; }
+    main.windows-calculator-container .step-gray .choose-your-window .radio-block .lab-img {
+      height: 33px;
+      width: 33px;
+      background-image: url(../img/no-checked.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      box-sizing: content-box;
+      z-index: 999;
+      background-color: #fff;
+      border: 10px solid #FFF;
+      box-shadow: 0 6px 37px -3px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      margin: auto;
+      display: block;
+      margin-bottom: 18px; }
