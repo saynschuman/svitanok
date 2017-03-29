@@ -289,6 +289,18 @@ $( "#slider-horizontal" ).slider({
     $('#' + id).html(content);
   })    
 
+  $('#char').click(function(){
+    $('#descr').removeClass('active');
+    $(this).addClass('active');
+    $('div[data-id="descr"]').css('opacity', '0');
+    $('div[data-id="char"]').css('opacity', '1');
+  })
+  $('#descr').click(function(){
+    $('#char').removeClass('active');
+    $(this).addClass('active');
+    $('div[data-id="char"]').css('opacity', '0');
+    $('div[data-id="descr"]').css('opacity', '1');
+  })
 
 });
 
