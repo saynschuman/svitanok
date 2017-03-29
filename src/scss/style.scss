@@ -2597,9 +2597,9 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
 }
 
 .windows-type-list {
-  margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .windows-type-list__item {
@@ -2637,8 +2637,8 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
 }
 
 .windows-type-list__wrapper {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  // padding-top: 5px;
+  // padding-bottom: 5px;
 }
 
 .windows-type-list__pic,
@@ -2646,11 +2646,14 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
   display: block;
   margin: 0 auto;
   height: auto;
+  border: 1px solid #bebebe;
 }
 
 .windows-type-list__pic--is-active,
 .windows-subtype-list__pic--is-active {
   display: none;
+  border: 1px solid #ffa043;
+  
 }
 
 .windows-subtype-list {
@@ -2700,10 +2703,10 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
     display: none;
   }
   .windows-type-list__wrapper {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-right: -5px;
-    margin-left: -5px;
+    // padding-top: 0;
+    // padding-bottom: 0;
+    // margin-right: -5px;
+    // margin-left: -5px;
   }
   .windows-type-list__pic--is-active {
     display: block;
@@ -3473,5 +3476,22 @@ main.roller-blinds {
 // windows calculator
 
 main.windows-calculator-container {
-  
+  ul.windows-choose-type {
+    li {
+      display: inline-block;
+      font-size: 0;
+      // margin: 10%;
+      img {
+        height: 125px;
+        width: auto;
+      }
+      .type-name {
+        display: block; 
+        font-size: 12px;
+        font-family: 'PTSansWebRegular';
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+  }
 }
