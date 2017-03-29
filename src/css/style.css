@@ -2982,7 +2982,9 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
   text-transform: uppercase;
   color: #6f6f6f;
   font-size: 18px;
-  font-family: 'ProximaNovaLight', Arial, sans-serif; }
+  font-family: 'ProximaNovaLight', Arial, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 15px; }
 
 .calculator-step-title {
   text-align: center;
@@ -2991,7 +2993,8 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
   font-family: 'ProximaNovaBold', Arial, sans-serif;
   text-transform: uppercase;
   margin: 0;
-  font-weight: normal; }
+  font-weight: normal;
+  padding-bottom: 50px; }
 
 .windows-type-list {
   margin-top: 40px;

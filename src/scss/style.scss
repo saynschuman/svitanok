@@ -2581,6 +2581,8 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
   color: #6f6f6f;
   font-size: 18px;
   font-family: 'ProximaNovaLight', Arial, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .calculator-step-title {
@@ -2591,6 +2593,7 @@ input[type="range"]::-ms-thumb, .send-form textarea[type="range"]::-ms-thumb, .q
   text-transform: uppercase;
   margin: 0;
   font-weight: normal;
+  padding-bottom: 50px;
 }
 
 .windows-type-list {
@@ -3458,16 +3461,6 @@ main.roller-blinds {
   color: #626262;
   position: relative;
   text-decoration: line-through;
-  // &::after {
-  //   position: absolute;
-  //   content: '';
-  //   bottom: 50%;
-  //   left: 0;
-  //   height: 2px;
-  //   width: 100%;
-  //   background-color: #626262;
-  //   transform: translateY(50%);
-  // }
 }
 
 .window-price.no-mar {
@@ -3475,4 +3468,10 @@ main.roller-blinds {
     padding-left: 15px;
     margin-left: -15px;
     border-left: 1px solid #eaeaea;
+}
+
+// windows calculator
+
+main.windows-calculator-container {
+  
 }
