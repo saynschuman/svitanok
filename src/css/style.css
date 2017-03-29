@@ -3751,7 +3751,8 @@ main.windows-calculator-container .ui-choose {
       padding: 20px 30px;
       border-top: 4px solid #e50d37;
       box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.1);
-      padding-bottom: 60px; }
+      padding-bottom: 60px;
+      margin-bottom: 30px; }
       main.windows-calculator-container .ui-choose .right .block .title {
         color: #6f6f6f;
         font-size: 18px;
@@ -3761,7 +3762,8 @@ main.windows-calculator-container .ui-choose {
       main.windows-calculator-container .ui-choose .right .block label {
         display: block;
         font-size: 15px;
-        font-family: 'ProximaNovaBold', Arial, sans-serif; }
+        font-family: 'ProximaNovaBold', Arial, sans-serif;
+        margin-bottom: 3px; }
       main.windows-calculator-container .ui-choose .right .block button {
         padding: 0 7px;
         border-style: solid;
@@ -3795,13 +3797,50 @@ main.windows-calculator-container .ui-choose {
         left: 0;
         right: 0;
         margin: auto;
-        border-radius: 0 0 3px 3px; }
+        border-radius: 0 0 3px 3px;
+        z-index: 99; }
         main.windows-calculator-container .ui-choose .right .block .toggle-list li {
           display: block;
           padding: 3px 7px;
           cursor: pointer; }
           main.windows-calculator-container .ui-choose .right .block .toggle-list li:hover {
             background-color: #e4e4e4; }
+      main.windows-calculator-container .ui-choose .right .block input {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 45px;
+        height: 30px;
+        width: 30px;
+        display: none; }
+        main.windows-calculator-container .ui-choose .right .block input:checked + label .lab-img {
+          background-image: url(../img/checked-l.png); }
+        main.windows-calculator-container .ui-choose .right .block input:checked + label .tit {
+          color: #e50d37; }
+      main.windows-calculator-container .ui-choose .right .block .tit {
+        font-size: 15px;
+        color: #444443;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-top: 3px;
+        padding-left: 45px;
+        font-family: 'PT Sans', sans-serif; }
+      main.windows-calculator-container .ui-choose .right .block .lab-img {
+        height: 33px;
+        float: left;
+        width: 33px;
+        background-image: url(../img/no-checked.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        box-sizing: content-box;
+        z-index: 999;
+        position: relative;
+        background-color: #fff; }
+      main.windows-calculator-container .ui-choose .right .block .label {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px; }
 
 main.windows-calculator-container .main-img img {
   float: left;

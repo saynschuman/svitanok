@@ -3522,6 +3522,7 @@ main.windows-calculator-container {
         border-top: 4px solid #e50d37;
         box-shadow: 0 10px 20px 1px rgba(0,0,0,.1);
         padding-bottom: 60px;
+        margin-bottom: 30px;
         .title {
           color: #6f6f6f;
           font-size: 18px;
@@ -3533,6 +3534,7 @@ main.windows-calculator-container {
           display: block;
           font-size: 15px;
           font-family: 'ProximaNovaBold', Arial, sans-serif;
+          margin-bottom: 3px;
         }
         button {
           padding: 0 7px;
@@ -3553,7 +3555,7 @@ main.windows-calculator-container {
             border: 5px solid transparent;
             border-top: 6px solid #787878;
             top: 13px;
-          }    
+          } 
         }
         .toggle-list {
           padding: 0;
@@ -3568,6 +3570,7 @@ main.windows-calculator-container {
           right: 0;
           margin: auto;
           border-radius: 0 0 3px 3px;
+          z-index: 99;
           li {
             display: block;
             padding: 3px 7px;
@@ -3576,6 +3579,51 @@ main.windows-calculator-container {
               background-color: #e4e4e4;
             }
           }
+        }
+        input {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 45px;
+          height: 30px;
+          width: 30px; 
+          &:checked + label {
+            .lab-img {
+              background-image: url(../img/checked-l.png);
+            }
+            .tit {
+              color: #e50d37;
+            }
+          }
+          
+          display: none;
+        }
+        .tit {
+          font-size: 15px;
+          color: #444443;
+          text-transform: uppercase;
+          font-weight: 700;
+          padding-top: 3px;
+          padding-left: 45px;
+          font-family: 'PT Sans', sans-serif;
+        }
+        .lab-img {
+          height: 33px;
+          float: left;
+          width: 33px;
+          background-image: url(../img/no-checked.png);
+          background-repeat: no-repeat; 
+          display: inline-block;
+          box-sizing: content-box;
+          z-index: 999;
+          position: relative;
+          background-color: #fff;
+        }
+        .label {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 20px;
         }
       }
     }

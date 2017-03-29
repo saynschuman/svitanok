@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
 	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -264,8 +265,7 @@
 						<div class="row">
 							<div class="col-md-6 l">
 								<label for="window-sill">Подоконник</label>
-								<button class="toggle-item" type="text" id="window-sill" placeholder="- Выберите подоконник -" readonly>- Выберите подоконник -</button>
-
+								<button class="toggle-item" type="text" id="window-sill">- Выберите подоконник -</button>
 								<ul class="toggle-list" data-id="window-sill">
 									<li>item-1</li>
 									<li>item-2</li>
@@ -274,8 +274,7 @@
 							</div>
 							<div class="col-md-6 r">
 								<label for="low-tide">Отлив</label>
-								<button class="toggle-item" type="text" id="low-tide" placeholder="- Выберите отлив -" readonly>- Выберите подоконник -</button>
-
+								<button class="toggle-item" type="text" id="low-tide">- Выберите подоконник -</button>
 								<ul class="toggle-list" data-id="low-tide">
 									<li>item-1</li>
 									<li>item-2</li>
@@ -284,6 +283,39 @@
 							</div>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="block">
+								<div class="title">Опции</div>
+								<input id="moskit-grid" type="checkbox" name="" checked>
+								<label class="label" for="moskit-grid">
+									<span class="lab-img"></span>
+									<div class="tit">москитная сетка</div>
+								</label>
+								<input id="child-castle" type="checkbox" name="">
+								<label class="label" for="child-castle">
+									<span class="lab-img"></span>
+									<div class="tit">детский замок</div>
+								</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="block">
+								<div class="title">услуги</div>
+								<input id="mont" type="checkbox" name="">
+								<label class="label" for="mont">
+									<span class="lab-img"></span>
+									<div class="tit">можнаж</div>
+								</label>
+								<input id="deliv" type="checkbox" name="" checked>
+								<label class="label" for="deliv">
+									<span class="lab-img"></span>
+									<div class="tit">доставка</div>
+								</label>						
+							</div>						
+						</div>
+					</div>
+					
 				</div>
 			</div>
 		</div>
