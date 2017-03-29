@@ -302,6 +302,17 @@ $( "#slider-horizontal" ).slider({
     $('div[data-id="descr"]').css('opacity', '1');
   })
 
+  $(window).on('load resize', function(){
+    var offset = $('.container').offset().left;
+    $('.block.blue').css('padding-left', offset);
+    $('.block.green').css('padding-left', offset);
+    $('.block.orange').css('padding-right', offset);
+    $('.block.red').css('padding-right', offset);
+      
+  })
+  
+  
+
 });
 
 
