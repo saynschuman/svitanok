@@ -3523,6 +3523,10 @@ main.windows-calculator-container {
         box-shadow: 0 10px 20px 1px rgba(0,0,0,.1);
         padding-bottom: 60px;
         margin-bottom: 30px;
+        &.small-bl {
+          margin-bottom: 0;
+          padding-bottom: 10px;
+        }
         .title {
           color: #6f6f6f;
           font-size: 18px;
