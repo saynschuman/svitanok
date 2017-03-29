@@ -158,7 +158,6 @@ $(document).ready(function() {
   
 
 
-
   // $('input[type="range"]').rangeslider();
 
 //popup
@@ -268,6 +267,27 @@ $( "#slider-horizontal" ).slider({
       }
     });
     $( "#amount-2" ).val( $( "#slider-horizontal" ).slider( "value" ) );    
+
+
+    // toggle-list
+
+  $('.toggle-item').focus(function(){
+    var id = $(this).attr('id');
+    $('ul[data-id="' + id + '"]').show();
+  })
+  $('.toggle-item').blur(function(){
+    var id = $(this).attr('id');
+    setTimeout(function(){
+      $('ul[data-id="' + id + '"]').hide();  
+    }, 200);
+    
+  })
+  $('.toggle-list li').click(function(){
+    var content = $(this).html(),
+      id = $(this).parent().attr('data-id');
+    
+    $('#' + id).html(content);
+  })    
 
 
 });
