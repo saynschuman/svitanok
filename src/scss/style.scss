@@ -4093,6 +4093,7 @@ main.windows-calculator-container {
   }
   .window-cost {
     background-color: #f2f2f2;
+    padding-bottom: 50px;
     .title {
       font-size: 30px;
       color: #6f6f6f;
@@ -4217,6 +4218,48 @@ main.windows-calculator-container {
             color: #fff;
           }
         }
+      }
+    }
+  }
+  .capabilities {
+    .title {
+      font-size: 30px;
+      color: #444443;
+      text-align: center;
+      padding: 50px 0;
+      font-family: 'ProximaNovaBold', Arial, sans-serif;
+      text-transform: uppercase;      
+    }
+    p {
+      font-size: 15px;
+      color: #444443;
+      font-family: 'PTSansWebRegular', Arial, sans-serif;
+      margin: 0;
+      line-height: 1.3;
+      b {
+        color: #000;
+        font-family: 'PTSansWebBold';
+        font-size: 18px;
+      }
+    }
+    .block {
+      margin-bottom: 50px;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      &:nth-child(odd) {
+        display: flex;
+        align-items: center;
+        // текст, уходящий в туман =)
+        // &::after {
+        //   content: '';
+        //   position: absolute;
+        //   bottom: 0;
+        //   right: 0;
+        //   height: 20px;
+        //   background: linear-gradient(to top, #fff, transparent);
+        //   width: 100%;
+        // }
       }
     }
   }
