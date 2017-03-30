@@ -308,10 +308,24 @@ $( "#slider-horizontal" ).slider({
     $('.block.green').css('padding-left', offset);
     $('.block.orange').css('padding-right', offset);
     $('.block.red').css('padding-right', offset);
-      
+      if ($('.tabs-nav li[data-nav-id="data-1"]').hasClass('active')) {
+        $('main.windows-calculator-container .window-cost .body-wrapper.active').css('border-radius', '0 5px 5px 5px')
+      }
   })
   
-  
+  $('.tabs-nav li').click(function(){
+    var id = $(this).attr('data-nav-id');
+    $('.tabs-nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.body-wrapper').removeClass('active');
+    $('#' + id).addClass('active');
+  })
+  $('.tabs-nav li[data-nav-id="data-7"]').click(function(){
+    $('main.windows-calculator-container .window-cost .body-wrapper.active').css('border-radius', '5px 0 5px 5px');
+  })
+  $('.tabs-nav li[data-nav-id="data-1"]').click(function(){
+    $('main.windows-calculator-container .window-cost .body-wrapper.active').css('border-radius', '0 5px 5px 5px');
+  })
 
 });
 

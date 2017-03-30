@@ -4092,6 +4092,7 @@ main.windows-calculator-container {
     }
   }
   .window-cost {
+    background-color: #f2f2f2;
     .title {
       font-size: 30px;
       color: #6f6f6f;
@@ -4099,6 +4100,124 @@ main.windows-calculator-container {
       padding: 50px 0;
       font-family: 'ProximaNovaBold', Arial, sans-serif;
       text-transform: uppercase;
+    }
+    .tabs-container {
+
+    }
+    .body-wrapper {
+      border: 1px solid #bebebe;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #fff;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    .tabs-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: stretch;
+      position: relative;
+      z-index: 2;
+      margin-bottom: -1px;
+      li {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #778888;
+        cursor: pointer;
+        padding: 20px 48.9px;
+        &:first-child {
+          padding-left: 20px;
+          border-radius: 5px 0 0 0;
+        }
+        &:last-child {
+          border-radius: 0 5px 0 0;
+        }
+        &.active {
+          border: 1px solid #bebebe;
+          border-bottom: none;
+          background-color: #fff;
+        }
+        span {
+          display: inline;
+          padding-bottom: 0;
+          line-height: 1;
+          position: relative;
+          white-space: nowrap;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 100%;
+            border-bottom: 1px dotted #778888;
+          }
+
+        }
+      }
+    }
+    .windows-galery {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+      .window {
+        flex-grow: 1;
+        margin-bottom: 45px;
+        .win-name {
+          font-size: 13px;
+          color: #999999;
+          font-family: 'PTSansWebRegular', Arial, sans-serif;
+          line-height: 1.5;
+          margin-bottom: 20px;
+          b {
+            color: #444443;
+          }
+          span {
+            display: block;
+          }
+        }
+        img {
+
+        }
+        .price {
+          font-size: 18px;
+          font-family: 'ProximaNovaRegular';
+          margin-top: 20px;
+          b {
+            font-family: 'ProximaNovaBold', Arial, sans-serif;
+          }
+          .sub-price {
+            color: #778888;
+            font-family: 'PTSansWebRegular', Arial, sans-serif;
+            font-size: 14px;
+            b {
+              font-family: 'PTSansWebBold';
+            }
+          }
+        }
+        .order {
+          display: block;
+          color: #e2193f;
+          font-size: 13px;
+          font-family: 'ProximaNovaBold', Arial, sans-serif;
+          text-transform: uppercase;
+          height: 36px;
+          width: 148px;
+          border: 2px solid #e00c34;
+          padding-top: 4px;
+          text-align: center;
+          border-radius: 23px;
+          margin-top: 10px;
+          &:hover {
+            background-color: #e00c34;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }

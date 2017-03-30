@@ -4233,10 +4233,123 @@ main.windows-calculator-container .window-properities .properities-cont {
         border: 142px solid transparent;
         border-right: 67px solid #f04366; }
 
-main.windows-calculator-container .window-cost .title {
-  font-size: 30px;
-  color: #6f6f6f;
-  text-align: center;
-  padding: 50px 0;
-  font-family: 'ProximaNovaBold', Arial, sans-serif;
-  text-transform: uppercase; }
+main.windows-calculator-container .window-cost {
+  background-color: #f2f2f2; }
+  main.windows-calculator-container .window-cost .title {
+    font-size: 30px;
+    color: #6f6f6f;
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'ProximaNovaBold', Arial, sans-serif;
+    text-transform: uppercase; }
+  main.windows-calculator-container .window-cost .body-wrapper {
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    display: none; }
+    main.windows-calculator-container .window-cost .body-wrapper.active {
+      display: block; }
+  main.windows-calculator-container .window-cost .tabs-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+            align-content: stretch;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -1px; }
+    main.windows-calculator-container .window-cost .tabs-nav li {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #778888;
+      cursor: pointer;
+      padding: 20px 48.9px; }
+      main.windows-calculator-container .window-cost .tabs-nav li:first-child {
+        padding-left: 20px;
+        border-radius: 5px 0 0 0; }
+      main.windows-calculator-container .window-cost .tabs-nav li:last-child {
+        border-radius: 0 5px 0 0; }
+      main.windows-calculator-container .window-cost .tabs-nav li.active {
+        border: 1px solid #bebebe;
+        border-bottom: none;
+        background-color: #fff; }
+      main.windows-calculator-container .window-cost .tabs-nav li span {
+        display: inline;
+        padding-bottom: 0;
+        line-height: 1;
+        position: relative;
+        white-space: nowrap; }
+        main.windows-calculator-container .window-cost .tabs-nav li span::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 1px;
+          width: 100%;
+          border-bottom: 1px dotted #778888; }
+  main.windows-calculator-container .window-cost .windows-galery {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    z-index: 1; }
+    main.windows-calculator-container .window-cost .windows-galery .window {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      margin-bottom: 45px; }
+      main.windows-calculator-container .window-cost .windows-galery .window .win-name {
+        font-size: 13px;
+        color: #999999;
+        font-family: 'PTSansWebRegular', Arial, sans-serif;
+        line-height: 1.5;
+        margin-bottom: 20px; }
+        main.windows-calculator-container .window-cost .windows-galery .window .win-name b {
+          color: #444443; }
+        main.windows-calculator-container .window-cost .windows-galery .window .win-name span {
+          display: block; }
+      main.windows-calculator-container .window-cost .windows-galery .window .price {
+        font-size: 18px;
+        font-family: 'ProximaNovaRegular';
+        margin-top: 20px; }
+        main.windows-calculator-container .window-cost .windows-galery .window .price b {
+          font-family: 'ProximaNovaBold', Arial, sans-serif; }
+        main.windows-calculator-container .window-cost .windows-galery .window .price .sub-price {
+          color: #778888;
+          font-family: 'PTSansWebRegular', Arial, sans-serif;
+          font-size: 14px; }
+          main.windows-calculator-container .window-cost .windows-galery .window .price .sub-price b {
+            font-family: 'PTSansWebBold'; }
+      main.windows-calculator-container .window-cost .windows-galery .window .order {
+        display: block;
+        color: #e2193f;
+        font-size: 13px;
+        font-family: 'ProximaNovaBold', Arial, sans-serif;
+        text-transform: uppercase;
+        height: 36px;
+        width: 148px;
+        border: 2px solid #e00c34;
+        padding-top: 4px;
+        text-align: center;
+        border-radius: 23px;
+        margin-top: 10px; }
+        main.windows-calculator-container .window-cost .windows-galery .window .order:hover {
+          background-color: #e00c34;
+          color: #fff; }
